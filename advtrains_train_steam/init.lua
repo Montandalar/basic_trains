@@ -81,13 +81,13 @@ advtrains.register_wagon("detailed_steam_engine", {
 	seats = {
 		{
 			name=S("Driver Stand (left)"),
-			attach_offset={x=-5, y=10, z=-10},
+			attach_offset={x=-8, y=0, z=-10},
 			view_offset={x=9, y=-2, z=-6},
 			group = "dstand",
 		},
 		{
 			name=S("Driver Stand (right)"),
-			attach_offset={x=5, y=10, z=-10},
+			attach_offset={x=8, y=0, z=-10},
 			view_offset={x=0, y=6, z=0},
 			group = "dstand",
 		},
