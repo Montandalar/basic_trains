@@ -1,5 +1,8 @@
 local S = attrans
 
+-- note: scharfenberg coupler is defined in advtrains core
+advtrains.register_coupler_type("train_japan_interwagon", attrans("Japanese Train Inter-Wagon Connection"))
+
 advtrains.register_wagon("engine_japan", {
 	mesh="advtrains_engine_japan.b3d",
 	textures = {"advtrains_engine_japan.png"},
@@ -61,6 +64,8 @@ advtrains.register_wagon("engine_japan", {
 			[1]={frames={x=60, y=80}, time=1}
 		}
 	},
+	coupler_types_front = {scharfenberg=true},
+	coupler_types_back = {train_japan_interwagon=true},
 	door_entry={-1.7},
 	visual_size = {x=1, y=1},
 	wagon_span=2.5,
@@ -131,6 +136,8 @@ advtrains.register_wagon("wagon_japan", {
 			[1]={frames={x=60, y=80}, time=1}
 		}
 	},
+	coupler_types_front = {train_japan_interwagon=true},
+	coupler_types_back = {train_japan_interwagon=true},
 	door_entry={-1.7, 1.7},
 	visual_size = {x=1, y=1},
 	wagon_span=2.3,
